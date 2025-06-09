@@ -1,3 +1,4 @@
+
 # Kata Foo Bar Quix
 
 Projet Java Spring Boot résolvant le kata de transformation de nombres selon les règles FOO/BAR/QUIX.
@@ -44,6 +45,12 @@ Inclut :
 - **GET /transform/{number}**  
   Retourne la transformation d’un nombre entier.
 
+## 🧾 Batch
+
+- Fichier en entrée : `input.txt`
+- Fichier de sortie : `output/output.txt`
+- Exécutable via API ou `run_batch.sh`
+
 ## 📈 Swagger
 
 Accessible à [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
@@ -52,4 +59,3 @@ Accessible à [http://localhost:8080/swagger-ui.html](http://localhost:8080/swag
 
 - Console + Fichier `logs/application.log`
 - Rotation journalière, 30 jours max, 100MB
-
