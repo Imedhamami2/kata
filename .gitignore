@@ -1,0 +1,31 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Maven
+target/
+log/
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# IDE Common
+*.swp
+*~
+
+# Test results
+surefire-reports/
+jacoco.exec
+
+# Others
+*.log
