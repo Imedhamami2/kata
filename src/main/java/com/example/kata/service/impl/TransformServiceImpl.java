@@ -1,11 +1,15 @@
 package com.example.kata.service.impl;
 
 import com.example.kata.service.TransformService;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.batch.core.configuration.JobRegistry;
+import org.springframework.batch.core.launch.JobLauncher;
 import org.springframework.stereotype.Service;
 
 @Service
 @Slf4j
+@RequiredArgsConstructor
 public class TransformServiceImpl implements TransformService {
 
     @Override

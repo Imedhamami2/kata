@@ -25,20 +25,20 @@ public class TransformControllerImplTest {
     @ParameterizedTest
     @MethodSource("com.example.kata.TestDataProvider#provideFooBarQuixData")
     public void testTransformEndpoint(int input, String expected) throws Exception {
-        mockMvc.perform(get("/transform/" + input))
+        mockMvc.perform(get("/api/transform/" + input))
                 .andExpect(status().isOk())
                 .andExpect(content().string(expected));
     }
 
     @Test
     public void testTransformEndpointNegativeNumber() throws Exception {
-        mockMvc.perform(get("/transform/-1"))
+        mockMvc.perform(get("/api/transform/-1"))
                 .andExpect(status().isBadRequest());
     }
 
     @Test
     public void testTransformEndpointAboveRange() throws Exception {
-        mockMvc.perform(get("/transform/101"))
+        mockMvc.perform(get("/api/transform/101"))
                 .andExpect(status().isBadRequest());
     }
 }
