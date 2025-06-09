@@ -11,6 +11,7 @@ public class TransformServiceImpl implements TransformService {
         char[] chars = String.valueOf(number).toCharArray();
         for (char c : chars) {
             if (c == '3') result.append("FOO");
+            if (c == '5') result.append("BAR");
         }
         return result.isEmpty() ? String.valueOf(number) : result.toString();
     }
