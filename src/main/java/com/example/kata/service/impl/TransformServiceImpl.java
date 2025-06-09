@@ -12,6 +12,7 @@ public class TransformServiceImpl implements TransformService {
         for (char c : chars) {
             if (c == '3') result.append("FOO");
             if (c == '5') result.append("BAR");
+            if (c == '7') result.append("QUIX");
         }
         return result.isEmpty() ? String.valueOf(number) : result.toString();
     }
