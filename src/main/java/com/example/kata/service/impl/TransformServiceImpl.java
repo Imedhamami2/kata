@@ -7,6 +7,7 @@ public class TransformServiceImpl implements TransformService {
     public String transform(int number) {
         StringBuilder result = new StringBuilder();
         if (number % 3 == 0) result.append("FOO");
+        if (number % 5 == 0) result.append("BAR");
         return result.isEmpty() ? String.valueOf(number) : result.toString();
     }
 }
